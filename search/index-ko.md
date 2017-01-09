@@ -7,7 +7,7 @@ lang: ko
 ---
 
 <div class="container-search-inner">
-  <form class="container-search-inner-form" id="search-form" action="/search/" method="get">
+  <form class="container-search-inner-form" id="search-form" action="/{{site.active_lang}}/search/" method="get">
     <div class="container-search-inner-form-input">
       <input class="container-search-inner-form-box" type="text" id="search-box" name="query">
     </div>
