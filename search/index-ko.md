@@ -1,7 +1,6 @@
 ---
 layout: main
 title: Search
-navigation_weight: 3
 permalink: search/
 lang: ko
 ---
