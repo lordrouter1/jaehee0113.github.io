@@ -1,0 +1,20 @@
+---
+layout: search
+---
+<!DOCTYPE html>
+<html>
+  <head>
+  {% include head.html %}
+  </head>
+  <body>
+    {% include navigation.html %}
+      {% include global.html %}
+      {% include search.html %}
+      {% include header.html %}
+    <section class="wrapper search">
+      {{content}}
+    </section>
+  </body>
+
+  {% include footer.html %}
+</html>

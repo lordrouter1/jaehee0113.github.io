@@ -1,0 +1,10 @@
+<header class="site-header" role="banner">
+  <div id="top"></div>
+  <div class="wrapper-title">
+  	{% if layout["layout"] == "post" %}
+    <div class="site-title-header">C:/posts/{{page.title}}<blink>_</blink></div>
+    {% else %}
+    <div class="site-title-header">C:/{{page.title}}<blink>_</blink></div>
+    {% endif %}
+  </div>
+</header>

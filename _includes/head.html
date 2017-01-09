@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {% if page.url == "/404" %}
+    <meta http-equiv="refresh" content="5; url=/">
+  {% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{page.title}}</title>
+  <meta name="description" content="{{site.description}}">
+  <link rel="stylesheet" type="text/css" href="/source/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="{{site.production_url}}/assets/css/simplePagination.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Press+Start+2P|Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="{{site.production_url}}/assets/js/svg4everybody.min.js"></script>
+  <script src="{{site.production_url}}/assets/js/main.js"></script>
+  <script src="{{site.production_url}}/assets/js/jquery.simplePagination.js"></script>
+</head>
