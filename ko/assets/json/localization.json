@@ -1,0 +1,52 @@
+{
+  "prev": [{
+    "en": "Prev"
+  }, {
+    "de": "Zurück"
+  }, {
+    "ko": "이전"
+  }],
+  "next": [{
+    "en": "Next"
+  }, {
+    "de": "Weiter"
+  }, {
+    "ko": "다음"
+  }],
+  "lookformore": [{
+    "en": "What are you looking for?"
+  }, {
+    "de": "Was möchten Sie suchen?"
+  }, {
+    "ko": "무엇을 찾고 싶으세요?"
+  }],
+  "search": [{
+    "en": "Search"
+  }, {
+    "de": "Suche"
+  }, {
+    "ko": "찾기"
+  }],
+  "readmore": [{
+    "en": "Read more"
+  }, {
+    "de": "Mehr anzeigen"
+  }, {
+    "ko": "더보기"
+  }],
+  "page_not_found" : [
+    {"en" : "Page not found"},
+    {"de" : "Diese Seite ist nicht verfügbar"},
+    {"ko" : "페이지를 찾을 수 없습니다"} 
+  ],
+  "view_all" : [
+    {"en" : "View All"},
+    {"de" : "Alles sehen"},
+    {"ko" : "모든 포스트 보기"} 
+  ],
+  "recent_posts" : [
+    {"en" : "Recent Posts"},
+    {"de" : "Neuste Beiträge"},
+    {"ko" : "가장 최신 포스트"} 
+  ]
+}

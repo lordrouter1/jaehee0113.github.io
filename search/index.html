@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+  <link rel="stylesheet" type="text/css" href="/source/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="https://jaehee0113.github.io/assets/css/simplePagination.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Press+Start+2P|Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="https://jaehee0113.github.io/assets/js/svg4everybody.min.js"></script>
+  <script src="https://jaehee0113.github.io/assets/js/main.js"></script>
+  <script src="https://jaehee0113.github.io/assets/js/jquery.simplePagination.js"></script>
+</head>
+
+  </head>
+  <body>
+    <nav class="site-navigation">
+  <div class="site-navigation-close">
+    <svg class="icon-cross"><use xlink:href="/assets/images/graphics/svg-symbols.svg#cross"></use></svg>
+  </div>
+  <div class="site-title-container">
+        <a class="site-title-container-header" href="/">Philsensus</a>
+  </div>
+  <ul class="menu-list">
+    
+    
+      
+    
+      
+        <li class="menu-item">
+          <a href="/"  class="menu-link" >
+            Home
+          </a>
+        </li>
+      
+    
+      
+        <li class="menu-item">
+          <a href="/about/"  class="menu-link" >
+            About
+          </a>
+        </li>
+      
+    
+      
+        <li class="menu-item">
+          <a href="/search/"  class="active menu-link" >
+            Search
+          </a>
+        </li>
+      
+    
+      
+        <li class="menu-item">
+          <a href="/archive/"  class="menu-link" >
+            Archive
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    <div class="application">
+      <div class="site-global">
+  <div class="container">
+    <div class="container-inner">
+      <div class="container-inner-hamburger">
+        <svg class="icon-hamburger"><use xlink:href="/assets/images/graphics/svg-symbols.svg#hamburger"></use></svg>
+      </div>
+      <div class="container-main">
+        <div class="container-main-title">
+          Philsensus
+        </div>
+        <div class="container-main-page">
+          <a class="container-main-page-link" href="/search/">Search</a>
+        </div>
+        <div class="container-main-language">
+          
+            
+            <a class="container-main-language-link  active " id="en" href="https://jaehee0113.github.io">English</a>
+            
+          
+            
+              
+              
+              <a class="container-main-language-link " id="de" href="https://jaehee0113.github.io/de/search/">Deutsch</a>
+              
+              
+            
+          
+            
+              
+              
+              
+              <a class="container-main-language-link " id="ko" href="https://jaehee0113.github.io/ko/search/">한국어</a>
+              
+            
+          
+
+        </div>
+      </div>
+      <div class="container-search">
+        <svg class="icon-search"><use xlink:href="/assets/images/graphics/svg-symbols.svg#search"></use></svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="container-search-main">
+  <div class="container-search-inner">
+    <label class="container-search-inner-label" for="search-box">Search</label>
+    <form class="container-search-inner-form" id="search-form" action="/search/" method="get">
+      <div class="container-search-inner-form-input">
+        <input type="text" placeholder="What are you looking for?" class="container-search-inner-form-box" id="search-box" name="query">
+      </div>
+      <div class="container-search-inner-form-submit">
+        <input class="container-search-inner-form-submit-button" type="submit" value="Go">
+      </div>
+    </form>
+  </div>
+</div>
+
+
+      <header class="site-header" role="banner">
+  <div id="top"></div>
+  <div class="wrapper-title">
+  	
+    <div class="site-title-header">C:/Search<blink>_</blink></div>
+    
+  </div>
+</header>
+
+      <section class="wrapper main">
+        <div class="container-search-inner">
+  <form class="container-search-inner-form" id="search-form" action="/search/" method="get">
+    <div class="container-search-inner-form-input">
+      <input class="container-search-inner-form-box" type="text" id="search-box" name="query" />
+    </div>
+    <div class="container-search-inner-form-submit">
+      <input class="container-search-inner-form-submit-button" type="submit" value="Go" />
+    </div>
+  </form>
+</div>
+
+<ul class="post-list" id="search-results"></ul>
+<div class="pagination"></div>
+
+<script>
+  window.store = {
+    
+      "posts-jekyll-update-welcome-to-jekyll": {
+        "title": "Welcome",
+        "author": "",
+        "category": "jekyll",
+        "date": "28 December 2016",
+        "content": "You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.To add new posts, simply add a file in the _posts directory that follows the convention YYYY-MM-DD-name-of-post.ext and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.Jekyll also offers powerful support for code snippets:def print_hi(name)  puts \"Hi, #{name}\"endprint_hi('Tom')#=&gt; prints 'Hi, Tom' to STDOUT.&lt;?php $variables = explode(array(holy), ','); print_r($variables);?&gt;Check out the Jekyll docs for more info on how to get the most out of Jekyll. File all bugs/feature requests at Jekyll’s GitHub repo. If you have questions, you can ask them on Jekyll Talk.",
+        "url": "/posts/jekyll/update/welcome-to-jekyll"
+      }
+      ,
+    
+      "posts-jekyll-update-first-sample": {
+        "title": "First page",
+        "author": "",
+        "category": "jekyll",
+        "date": "27 December 2016",
+        "content": "What is up?",
+        "url": "/posts/jekyll/update/first-sample"
+      }
+      ,
+    
+      "posts-ho-second-sample": {
+        "title": "Second page",
+        "author": "",
+        "category": "ho",
+        "date": "26 December 2016",
+        "content": "What is up?",
+        "url": "/posts/ho/second-sample"
+      }
+      ,
+    
+      "posts-ho-third-sample": {
+        "title": "Third page",
+        "author": "",
+        "category": "ho",
+        "date": "25 December 2016",
+        "content": "What is up?",
+        "url": "/posts/ho/third-sample"
+      }
+      ,
+    
+      "posts-introduction-fourth-sample": {
+        "title": "Fourth page",
+        "author": "",
+        "category": "introduction",
+        "date": "24 December 2016",
+        "content": "What is up?",
+        "url": "/posts/introduction/fourth-sample"
+      }
+      
+    
+  };
+</script>
+
+<script src="../assets/js/lunr.min.js"></script>
+
+<script src="../assets/js/search.js"></script>
+
+
+      </section>
+    </div>
+  </body>
+  <footer class="site-footer">
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <a class="anchor" href="#top"><svg class="icon-chevron-top"><use xlink:href="/assets/images/graphics/svg-symbols.svg#chevron-top"></use></svg></a>
+      </div>
+      <div class="footer-col footer-col-2">
+        <p>2017 @ Powered by Github Pages and Jekyll <svg class="icon-jekyll"><use xlink:href="/assets/images/graphics/svg-symbols.svg#jekyll"></use></svg>, licensed under MIT License.</p>
+      </div>
+      <div class="footer-col footer-col-3">
+        <a class="footer-link-linkedin" href="http://linkedin.com/in/jaehee0113">
+          <svg class="icon-linkedin"><use xlink:href="/assets/images/graphics/svg-symbols.svg#linkedin"></use></svg>
+        </a>
+        <a class="footer-link-github" href="http://github.com/jaehee0113">
+          <svg class="icon-github"><use xlink:href="/assets/images/graphics/svg-symbols.svg#github"></use></svg>
+        </a>
+        <a class="footer-link-youtube" href="http://youtube.com/jaehee0113">
+          <svg class="icon-youtube"><use xlink:href="/assets/images/graphics/svg-symbols.svg#youtube"></use></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</html>
