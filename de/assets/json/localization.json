@@ -37,16 +37,16 @@
   "page_not_found" : [
     {"en" : "Page not found"},
     {"de" : "Diese Seite ist nicht verfügbar"},
-    {"ko" : "페이지를 찾을 수 없습니다"} 
+    {"ko" : "페이지를 찾을 수 없습니다"}
   ],
   "view_all" : [
     {"en" : "View All"},
     {"de" : "Alles sehen"},
-    {"ko" : "모든 포스트 보기"} 
+    {"ko" : "모든 포스트 보기"}
   ],
   "recent_posts" : [
     {"en" : "Recent Posts"},
     {"de" : "Neuste Beiträge"},
-    {"ko" : "가장 최신 포스트"} 
+    {"ko" : "가장 최신 포스트"}
   ]
 }
