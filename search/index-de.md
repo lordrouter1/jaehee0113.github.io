@@ -1,7 +1,6 @@
 ---
 layout: main
 title: Suche
-navigation_weight: 3
 permalink: search/
 lang: de
 ---
