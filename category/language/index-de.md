@@ -1,7 +1,9 @@
 ---
 layout: category
-title: Language
+title: Fremdsprachen
 category: language
+permalink: category/language/
+lang: de
 ---
 <ul class="category-sub-list">
 {% for category in site.data.categories %}

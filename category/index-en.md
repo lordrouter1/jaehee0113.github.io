@@ -2,6 +2,8 @@
 layout: main
 title: Categories
 navigation_weight: 3
+permalink: category/
+lang: en
 ---
 <!-- Initial Model (without considering subcategories)
 <ul class="category-list">
