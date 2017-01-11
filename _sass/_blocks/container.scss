@@ -17,7 +17,7 @@
       }
 
       @include breakpoint(mobile){
-        flex-basis: 25%;
+        flex-basis: 15%;
       }
 
     }
@@ -35,7 +35,7 @@
     }
 
     @include breakpoint(mobile){
-      flex-basis: 50%;
+      flex-basis: 70%;
     }
 
     &-title{
@@ -87,6 +87,10 @@
         &:first-child{
           margin: 0px;
         }
+
+        @include breakpoint(mobile){
+          font-size: 13px;
+        }
       }
 
     }
@@ -102,7 +106,7 @@
     }
 
     @include breakpoint(mobile){
-      flex-basis: 25%;
+      flex-basis: 15%;
       justify-content: flex-end;
     }
 
@@ -118,7 +122,10 @@
       visibility: hidden; /* never use display: block and none when giving animation!*/
       opacity: 0;
       transition: visibility 0.2s, opacity 0.2s linear;
-      padding: 30px 50px 50px 50px;
+
+      @include breakpoint(computers){
+        padding: 30px 50px 50px 50px;
+      }
 
       &.active{
         visibility: visible;

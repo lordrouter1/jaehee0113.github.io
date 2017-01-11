@@ -7,6 +7,10 @@
 	&-list{
 		list-style-type: none;
 
+		@include breakpoint(mobile){
+			margin-left: 0px !important;
+		}
+
 		&-link{
 			color: map-get($colors, _green-lime) !important;
 			font-size: 20px;
@@ -18,15 +22,22 @@
 	}
 
 	&-sub{
+
 		&-list{
+
+			@include breakpoint(mobile){
+				margin-left: 0px !important;
+			}
+
 			list-style-type: none;
+			
 			&-link{
 				color: map-get($colors, _white) !important;
 
 				&:hover{
 					color: map-get($colors, _green-lime) !important;
 				}
-		}
+			}
 		}
 	}
 }

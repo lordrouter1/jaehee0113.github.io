@@ -6,7 +6,8 @@ category: german
 
 {% assign curr_size = site.categories[page.category] | size %}
 {% unless curr_size > 0 %}
-  <h3> No posts related to {{page.title}} </h3>
+  {% assign word = page.category %}
+  <h3> {% localize no_related_post %} {% localize word %} </h3>
 {% endunless %}
 
 {% if curr_size > 0 %}
