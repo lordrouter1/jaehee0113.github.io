@@ -37,16 +37,71 @@
   "page_not_found" : [
     {"en" : "Page not found"},
     {"de" : "Diese Seite ist nicht verfügbar"},
-    {"ko" : "페이지를 찾을 수 없습니다"} 
+    {"ko" : "페이지를 찾을 수 없습니다"}
   ],
   "view_all" : [
     {"en" : "View All"},
     {"de" : "Alles sehen"},
-    {"ko" : "모든 포스트 보기"} 
+    {"ko" : "모든 포스트 보기"}
   ],
   "recent_posts" : [
     {"en" : "Recent Posts"},
     {"de" : "Neuste Beiträge"},
-    {"ko" : "가장 최신 포스트"} 
+    {"ko" : "가장 최신 포스트"}
+  ],
+  "machine_learning" : [
+    {"en" : "Machine Learning"},
+    {"de" : "Machine Learning"},
+    {"ko" : "머신러닝"}
+  ],
+  "web_programming" : [
+    {"en" : "Web Programming"},
+    {"de" : "Web Programmierung"},
+    {"ko" : "웹 프로그래밍"}
+  ],
+  "algorithms" : [
+    {"en" : "Algorithms"},
+    {"de" : "Algorithmus"},
+    {"ko" : "알고리즘"}
+  ],
+  "german" : [
+    {"en" : "German"},
+    {"de" : "Deutsch"},
+    {"ko" : "독일어"}
+  ],
+  "english" : [
+    {"en" : "English"},
+    {"de" : "Englisch"},
+    {"ko" : "영어"}
+  ],
+  "computing" : [
+    {"en" : "Computing"},
+    {"de" : "Informatik"},
+    {"ko" : "정보기술"}
+  ],
+  "language" : [
+    {"en" : "Language"},
+    {"de" : "Sprachen"},
+    {"ko" : "언어"}
+  ],
+  "blog" : [
+    {"en" : "Blog"},
+    {"de" : "Blog"},
+    {"ko" : "블로그"}
+  ],
+  "general" : [
+    {"en" : "General"},
+    {"de" : "Allgemeine"},
+    {"ko" : "일반"}
+  ],
+  "go" : [
+    {"en" : "Go"},
+    {"de" : "Suche"},
+    {"ko" : "이동"}
+  ],
+  "no_related_post" : [
+    {"en" : "No posts related to"},
+    {"de" : "Keine Beiträge für die Kategorie "},
+    {"ko" : "다음 카테고리와 연관된 글들이 없습니다: "}
   ]
 }

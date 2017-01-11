@@ -48,5 +48,50 @@
     {"en" : "Recent Posts"},
     {"de" : "Neuste Beiträge"},
     {"ko" : "가장 최신 포스트"}
+  ],
+  "machine_learning" : [
+    {"en" : "Machine Learning"},
+    {"de" : "Machine Learning"},
+    {"ko" : "머신러닝"}
+  ],
+  "web_programming" : [
+    {"en" : "Web Programming"},
+    {"de" : "Web Programmierung"},
+    {"ko" : "웹 프로그래밍"}
+  ],
+  "algorithms" : [
+    {"en" : "Algorithms"},
+    {"de" : "Algorithmus"},
+    {"ko" : "알고리즘"}
+  ],
+  "german" : [
+    {"en" : "German"},
+    {"de" : "Deutsch"},
+    {"ko" : "독일어"}
+  ],
+  "english" : [
+    {"en" : "English"},
+    {"de" : "Englisch"},
+    {"ko" : "영어"}
+  ],
+  "computing" : [
+    {"en" : "Computing"},
+    {"de" : "Informatik"},
+    {"ko" : "정보기술"}
+  ],
+  "language" : [
+    {"en" : "Language"},
+    {"de" : "Sprachen"},
+    {"ko" : "언어"}
+  ],
+  "blog" : [
+    {"en" : "Blog"},
+    {"de" : "Blog"},
+    {"ko" : "블로그"}
+  ],
+  "general" : [
+    {"en" : "General"},
+    {"de" : "Allgemeine"},
+    {"ko" : "일반"}
   ]
 }
