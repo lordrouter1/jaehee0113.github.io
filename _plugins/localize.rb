@@ -5,7 +5,7 @@
 
     Dependencies: jekyll-polyglot
 
-    Please make sure you have the necessary dependency before using this custom tag.   
+    Please make sure you have the necessary dependency before using this custom tag.
 =end
 
 module Jekyll
@@ -20,15 +20,25 @@ module Jekyll
 
     def initialize(tag_name, variables, tokens)
     	super
-        @variables = variables.split(" ")
-        @string = @variables[0]
         @words = JSON.parse(IO.read(File.join(File.dirname(__FILE__), '../assets/json/localization.json')))
-        @word = @words[@string]
+        @init = variables.split(" ")
+        if @init[0] != 'word'
+            @variables = variables.split(" ")
+            @string = @variables[0]
+            @word = @words[@string]
+        end
         @record = 'nothing'
     end
 
     def render(context)
         @language = "#{lookup(context, 'site.active_lang')}"
+        if @variables.nil?
+            @keyword = "#{lookup(context, 'word')}"
+            if @keyword.nil?
+                @keyword = 'nothing'
+            end
+            @word = @words[@keyword]
+        end
         @word.each do |record|
             if record.key?(@language)
                 @record = record[@language]

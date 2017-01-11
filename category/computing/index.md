@@ -3,15 +3,16 @@ layout: main
 title: Computing
 category: computing
 ---
-<div class="category">  
+<div class="category">
   <ul class="category-sub-list">
   {% for category in site.data.categories %}
     {% if category.title == page.title %}
       {% if category.subcategories != null %}
         {% for subcategory in category.subcategories %}
           <li class="category-sub-list-enclosure">
-            <a class="category-sub-list-link" href="{{site.production_url}}/category{{category.href}}{{subcategory.href}}">
-              {{subcategory.title}}
+            <a class="category-sub-list-link" href="{{site.production_url}}/category{{category.href}}{{subcategory.href}}">ㄴ
+              {% assign word = subcategory.id %}
+              {% localize word %}
             </a>
           </li>
         {% endfor %}
@@ -19,4 +20,4 @@ category: computing
     {% endif %}
   {% endfor %}
   </ul>
-</div>>  
+</div>>

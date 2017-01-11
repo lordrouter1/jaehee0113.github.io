@@ -6,7 +6,7 @@ permalink: category/
 lang: en
 ---
 
-<div class="category">  
+<div class="category">
   <ul class="category-list">
     {% for category in site.data.categories %}
     <li class="category-list-enclosure">
