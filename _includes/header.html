@@ -2,9 +2,21 @@
   <div id="top"></div>
   <div class="wrapper-title">
   	{% if layout["layout"] == "post" %}
-    <div class="site-title-header">C:/posts/{{page.title}}<blink>_</blink></div>
+      <div class="site-title-header">C:/posts/{{page.title | downcase | replace: ' ', '_'}}<blink>_</blink></div>
+    {% elsif layout["layout"] == "category" %}
+      {% assign word = page.category %}
+      {% unless site.active_lang == 'ko' %}
+      <div class="site-title-header">
+        C:/category/{% localize word %}
+        <blink>_</blink>
+      </div>
+      {% else %}
+      <div class="site-title-header">C:/category/{{page.title | downcase | replace: ' ', '_'}}
+        <blink>_</blink>
+      </div>
+      {% endunless %}
     {% else %}
-    <div class="site-title-header">C:/{{page.title}}<blink>_</blink></div>
+      <div class="site-title-header">C:/{{page.title | downcase | replace: ' ', '_'}}<blink>_</blink></div>
     {% endif %}
   </div>
 </header>
