@@ -60,11 +60,11 @@
 
     &-header{
       line-height: 1.5em !important;
-      font: 30px "Press Start 2P", 'Nanum Gothic', Helvetica, Arial, sans-serif;
+      font: 25px "Press Start 2P", 'Nanum Gothic', Helvetica, Arial, sans-serif;
       color: map-get($colors, _white);
 
       @include breakpoint(smallest){
-        font: 20px "Press Start 2P", 'Nanum Gothic', Helvetica, Arial, sans-serif;
+        font: 10px "Press Start 2P", 'Nanum Gothic', Helvetica, Arial, sans-serif;
       }
     }
   }

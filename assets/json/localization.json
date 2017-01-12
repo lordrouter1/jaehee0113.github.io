@@ -103,5 +103,15 @@
     {"en" : "No posts related to"},
     {"de" : "Keine Beiträge für die Kategorie "},
     {"ko" : "다음 카테고리와 연관된 글들이 없습니다: "}
+  ],
+  "category" : [
+    {"en" : "Category"},
+    {"de" : "Kategorie"},
+    {"ko" : "카테고리"}
+  ],
+  "posts" : [
+    {"en" : "Posts"},
+    {"de" : "Beiträge"},
+    {"ko" : "포스트"}
   ]
 }
