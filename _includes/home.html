@@ -1,18 +1,7 @@
----
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-title: Startseite
-permalink: /
-navigation_weight: 1
-lang: de
----
-
 <div class="post">
 	<div class="post-list-title">
 		<span class="post-title">
-			Neuste Beiträge
+			{% localize recent_posts %}
 		</span>
 	</div>
 	<ul class="post-list">
@@ -34,7 +23,7 @@ lang: de
 					{{post.content | truncatewords: 30}}
 				</div>
 				<div class="card-details-readmore">
-					<a href="{{post.url}}"> Mehr anzeigen > </a>
+					<a href="{{post.url}}">Read more > </a>
 				</div>
 			</div>
 		</li>

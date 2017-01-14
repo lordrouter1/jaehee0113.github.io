@@ -2,7 +2,6 @@
 layout: page
 title: About
 permalink: about/
-lang: en
 navigation_weight: 2
 ---
 

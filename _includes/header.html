@@ -13,7 +13,8 @@
       </div>
       {% endunless %}
     {% else %}
-      <div class="site-title-header">{{page.title | downcase | replace: ' ', '_'}}<blink>_</blink></div>
+      {% assign word = page.title | downcase | replace: ' ', '_' %}
+      <div class="site-title-header">{% localize word %}<blink>_</blink></div>  
     {% endif %}
   </div>
 </header>

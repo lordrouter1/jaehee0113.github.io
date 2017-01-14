@@ -43,13 +43,14 @@
       @include breakpoint(computers){
           flex-basis: 50%;
           font: 400 25px "Pacifico", Helvetica, Arial, sans-serif;
-          color: map-get($colors, _green-lime);
+          color: map-get($colors, _green-lime) !important;
           padding-left: 30px;
       }
 
       @include breakpoint(mobile){
         display: none;
       }
+      
     }
 
     &-language{

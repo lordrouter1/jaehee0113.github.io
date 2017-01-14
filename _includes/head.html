@@ -5,7 +5,18 @@
     <meta http-equiv="refresh" content="5; url=/">
   {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{page.title}}</title>
+  {% if layout["layout"] == "post" %}
+    <title>{{page.title}}</title>
+  {% elsif layout["layout"] == "category" %}
+    {% unless site.active_lang == 'ko' %}
+    <title>{% assign word = page.category %}{% localize word %}</title>
+    {% else %}
+      <title>{{page.title}}</title>
+    {% endunless %}
+  {% else %}
+    {% assign word = page.title | downcase | replace: ' ', '_' %}
+    <title>{% localize word %}</title> 
+  {% endif %}
   <meta name="description" content="{{site.description}}">
   <link rel="stylesheet" type="text/css" href="/source/css/styles.css">
   <link rel="stylesheet" type="text/css" href="{{site.production_url}}/assets/css/simplePagination.css">

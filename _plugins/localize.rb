@@ -39,11 +39,15 @@ module Jekyll
             end
             @word = @words[@keyword]
         end
-        @word.each do |record|
-            if record.key?(@language)
-                @record = record[@language]
-                break
+        if !@word.nil?
+            @word.each do |record|
+                if record.key?(@language)
+                    @record = record[@language]
+                    break
+                end
             end
+        else
+            @record = 'nothing'
         end
         "#{@record}"
     end

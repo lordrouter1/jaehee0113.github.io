@@ -1,5 +1,5 @@
 <div class="container-main-nopost">
-{% if include.param != 'main' %}
+{% if include.param == 'post' %}
   {% assign curr_size = site.categories[page.category] | size %}
   {% unless curr_size > 0 %}
     {% assign word = page.category %}

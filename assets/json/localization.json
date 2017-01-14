@@ -1,4 +1,19 @@
 {
+  "home" : [
+    {"en" : "Home"},
+    {"de" : "Startseite"},
+    {"ko" : "Home"}
+  ],
+  "about" : [
+    {"en" : "About"},
+    {"de" : "Über"},
+    {"ko" : "About"}
+  ],
+  "archive" : [
+    {"en" : "Archive"},
+    {"de" : "Archiv"},
+    {"ko" : "Archive"}
+  ],
   "prev": [{
     "en": "Prev"
   }, {
@@ -108,6 +123,11 @@
     {"en" : "Category"},
     {"de" : "Kategorie"},
     {"ko" : "카테고리"}
+  ],
+  "categories" : [
+    {"en" : "Categories"},
+    {"de" : "Kategorien"},
+    {"ko" : "Categories"}
   ],
   "posts" : [
     {"en" : "Posts"},

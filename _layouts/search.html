@@ -8,12 +8,14 @@ layout: search
   </head>
   <body>
     {% include navigation.html %}
+    <div class="application">
       {% include global.html %}
       {% include search.html %}
       {% include header.html %}
-    <section class="wrapper search">
-      {{content}}
-    </section>
+      <section class="wrapper search">
+        {{content}}
+      </section>
+    </div>
   </body>
 
   {% include footer.html %}
