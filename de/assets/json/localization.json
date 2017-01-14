@@ -1,4 +1,19 @@
 {
+  "home" : [
+    {"en" : "Home"},
+    {"de" : "Startseite"},
+    {"ko" : "Home"}
+  ],
+  "about" : [
+    {"en" : "About"},
+    {"de" : "Über"},
+    {"ko" : "About"}
+  ],
+  "archive" : [
+    {"en" : "Archive"},
+    {"de" : "Archiv"},
+    {"ko" : "Archive"}
+  ],
   "prev": [{
     "en": "Prev"
   }, {
@@ -100,8 +115,23 @@
     {"ko" : "이동"}
   ],
   "no_related_post" : [
-    {"en" : "No related posts to"},
-    {"de" : "Suche"},
-    {"ko" : "이동"}
+    {"en" : "No posts related to"},
+    {"de" : "Keine Beiträge für die Kategorie "},
+    {"ko" : "다음 카테고리와 연관된 글들이 없습니다: "}
+  ],
+  "category" : [
+    {"en" : "Category"},
+    {"de" : "Kategorie"},
+    {"ko" : "카테고리"}
+  ],
+  "categories" : [
+    {"en" : "Categories"},
+    {"de" : "Kategorien"},
+    {"ko" : "Categories"}
+  ],
+  "posts" : [
+    {"en" : "Posts"},
+    {"de" : "Beiträge"},
+    {"ko" : "포스트"}
   ]
 }
