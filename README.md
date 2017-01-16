@@ -11,3 +11,25 @@ I developed my own theme for my needs, I might publish this to Jekyll theme repo
 This repository has mainly two branches: master and source branch. More explanations as to why I had to do this is explained on my website.
 
 **Custom plugins** in _plugins folder can be used and modified by others. Note that these plugins are written in Ruby.
+
+### Installation
+
+To run the source file locally please go to the root folder and enter the following:
+
+```sh
+$ bundle install
+$ jekyll serve
+```
+This should start the local server on port 4000 (usually).
+
+### Plugins
+
+Philsensus uses the following custom plugins
+
+* Localize
+* Typecheck
+* Svgicons
+
+### Development
+
+To contribute to the localization, please modify `localization.json` file.
