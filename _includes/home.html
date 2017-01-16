@@ -17,13 +17,25 @@
 						{{category}}
 					{% endfor %}
 					</span>
-					<span class="card-details-header-date">{{post.date | date_to_long_string}}</span>
+					<span class="card-details-header-date">
+						{% assign dateStrings = post.date | date_to_long_string | split: ' ' %}
+						{% for dateString in dateStrings %}
+							{% assign word = dateString | downcase %}
+							{% capture datatype %} {% typecheck word %} {% endcapture %}
+							{% assign datatype = datatype | strip %}
+							{% if datatype == 'int' %}
+								{{word}}
+							{% else %}
+								{% localize word %}
+							{% endif %}
+						{% endfor %}
+					</span>
 				</div>
 				<div class="card-details-main">
 					{{post.content | truncatewords: 30}}
 				</div>
 				<div class="card-details-readmore">
-					<a href="{{post.url}}">Read more > </a>
+					<a href="{{post.url}}">{% localize readmore %} > </a>
 				</div>
 			</div>
 		</li>
