@@ -37,6 +37,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - Rakefile
 
 paginate: 10
 paginate_path: "/archive/page:num/"

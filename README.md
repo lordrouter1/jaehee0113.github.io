@@ -33,3 +33,9 @@ Philsensus uses the following custom plugins
 ### Development
 
 To contribute to the localization, please modify `localization.json` file.
+
+
+### Versions
+
+* v 1.1 : implementation of disqus commenting system (+ uniquely identify posts)
+* v 1.0 : the first versions

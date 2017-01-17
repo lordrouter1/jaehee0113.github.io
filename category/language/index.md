@@ -1,9 +1,7 @@
 ---
 layout: category
-title: Fremdsprachen
+title: Language
 category: language
-permalink: category/language/
-lang: de
 ---
 
 {% include category.html param = page.layout %}

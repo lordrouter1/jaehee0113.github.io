@@ -4,6 +4,13 @@
     {"de" : "Startseite"},
     {"ko" : "Home"}
   ],
+  "language": [{
+    "en": "English"
+  }, {
+    "de": "Deutsch"
+  }, {
+    "ko": "한국어"
+  }],
   "about" : [
     {"en" : "About"},
     {"de" : "Über"},
