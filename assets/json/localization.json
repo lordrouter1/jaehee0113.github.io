@@ -4,6 +4,13 @@
     {"de" : "Startseite"},
     {"ko" : "Home"}
   ],
+  "language": [{
+    "en": "English"
+  }, {
+    "de": "Deutsch"
+  }, {
+    "ko": "한국어"
+  }],
   "about" : [
     {"en" : "About"},
     {"de" : "Über"},
@@ -133,5 +140,89 @@
     {"en" : "Posts"},
     {"de" : "Beiträge"},
     {"ko" : "포스트"}
-  ]
+  ],
+  "january": [{
+    "en": "January"
+  }, {
+    "de": "Januar"
+  }, {
+    "ko": "1월"
+  }],
+  "february": [{
+    "en": "February"
+  }, {
+    "de": "Februar"
+  }, {
+    "ko": "2월"
+  }],
+  "march": [{
+    "en": "March"
+  }, {
+    "de": "März"
+  }, {
+    "ko": "3월"
+  }],
+  "april": [{
+    "en": "April"
+  }, {
+    "de": "April"
+  }, {
+    "ko": "4월"
+  }],
+  "may": [{
+    "en": "May"
+  }, {
+    "de": "Mai"
+  }, {
+    "ko": "5월"
+  }],
+  "june": [{
+    "en": "June"
+  }, {
+    "de": "Juni"
+  }, {
+    "ko": "6월"
+  }],
+  "july": [{
+    "en": "July"
+  }, {
+    "de": "Juli"
+  }, {
+    "ko": "7월"
+  }],
+  "august": [{
+    "en": "August"
+  }, {
+    "de": "August"
+  }, {
+    "ko": "8월"
+  }],
+  "september": [{
+    "en": "September"
+  }, {
+    "de": "September"
+  }, {
+    "ko": "9월"
+  }],
+  "october": [{
+    "en": "October"
+  }, {
+    "de": "Oktober"
+  }, {
+    "ko": "10월"
+  }],
+  "november": [{
+    "en": "November"
+  }, {
+    "de": "November"
+  }, {
+    "ko": "11월"
+  }],
+  "december": [{
+    "en": "December"
+  }, {
+    "de": "Dezember"
+  }, {
+    "ko": "12월"
+  }]
 }

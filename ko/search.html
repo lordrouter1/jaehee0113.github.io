@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <head>
+  <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
     
-    <title>About</title> 
+    <title>찾기</title> 
   
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
@@ -70,7 +70,7 @@
     
       
         <li class="menu-item">
-          <a href="/ko/about/"  class="active menu-link" >
+          <a href="/ko/about"  class="menu-link" >
             
             About
           </a>
@@ -118,7 +118,7 @@
             
               
               
-              <a class="container-main-language-link " id="de" href="https://jaehee0113.github.io/de/about/">Deutsch</a>
+              <a class="container-main-language-link " id="de" href="https://jaehee0113.github.io/de/search">Deutsch</a>
               
               
             
@@ -127,7 +127,7 @@
               
               
               
-              <a class="container-main-language-link  active " id="ko" href="https://jaehee0113.github.io/ko/about/">한국어</a>
+              <a class="container-main-language-link  active " id="ko" href="https://jaehee0113.github.io/ko/search">한국어</a>
               
             
           
@@ -169,17 +169,55 @@
   <div class="wrapper-title">
   	
       
-      <div class="site-title-header">About<blink>_</blink></div>  
+      <div class="site-title-header">찾기<blink>_</blink></div>  
     
   </div>
 </header>
 
-      <section class="wrapper page">
-        <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="http://jekyllrb.com/">jekyllrb.com</a></p>
+      <section class="wrapper search">
+        
+<div class="container-search-inner">
+    
+    
+      <form class="container-search-inner-form" id="search-form" action="/ko/search/" method="get">
+    
+      <div class="container-search-inner-form-input">
+        <input type="text" placeholder="무엇을 찾고 싶으세요?" class="container-search-inner-form-box" id="search-box" name="query" />
+      </div>
+      <div class="container-search-inner-form-submit">
+        <input class="container-search-inner-form-submit-button" type="submit" value="이동" />
+      </div>
+    </form>
+  </div>
+
+<ul class="post-list" id="search-results"></ul>
+<div class="pagination"></div>
+
+<script>
+    window.store = {
+      
+        "posts-german-sample": {
+          "title": "sample",
+          "author": "",
+          "category": "german",
+          "date": "13 January 2017",
+          "content": "You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.To add new posts, simply add a file in the _posts directory that follows the convention YYYY-MM-DD-name-of-post.ext and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.Jekyll also offers powerful support for code snippets:def print_hi(name)  puts \"Hi, #{name}\"endprint_hi('Tom')#=&gt; prints 'Hi, Tom' to STDOUT.&lt;?php $variables = explode(array(holy), ','); print_r($variables);?&gt;",
+          "url": "/posts/german/sample"
+        }
+        
+      
+    };
+  </script>
+
+<script src="../assets/js/lunr.min.js"></script>
+
+<script src="../assets/js/search.js"></script>
+
 
       </section>
     </div>
   </body>
+
   <footer class="site-footer">
 
   <div class="wrapper">

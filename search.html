@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <head>
+  <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <title>First page</title>
+    
+    <title>Search</title> 
   
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
@@ -69,7 +70,7 @@
     
       
         <li class="menu-item">
-          <a href="/about/"  class="menu-link" >
+          <a href="/about"  class="menu-link" >
             
             About
           </a>
@@ -117,7 +118,7 @@
             
               
               
-              <a class="container-main-language-link " id="de" href="https://jaehee0113.github.io/de/posts/jekyll/update/first-sample">Deutsch</a>
+              <a class="container-main-language-link " id="de" href="https://jaehee0113.github.io/de/search">Deutsch</a>
               
               
             
@@ -126,7 +127,7 @@
               
               
               
-              <a class="container-main-language-link " id="ko" href="https://jaehee0113.github.io/ko/posts/jekyll/update/first-sample">한국어</a>
+              <a class="container-main-language-link " id="ko" href="https://jaehee0113.github.io/ko/search">한국어</a>
               
             
           
@@ -167,17 +168,56 @@
   <div id="top"></div>
   <div class="wrapper-title">
   	
-      <div class="site-title-header">Posts/first_page<blink>_</blink></div>
+      
+      <div class="site-title-header">Search<blink>_</blink></div>  
     
   </div>
 </header>
 
-      <section class="wrapper post">
-        <p>What is up?</p>
+      <section class="wrapper search">
+        
+<div class="container-search-inner">
+    
+    
+      <form class="container-search-inner-form" id="search-form" action="/search/" method="get">
+    
+      <div class="container-search-inner-form-input">
+        <input type="text" placeholder="What are you looking for?" class="container-search-inner-form-box" id="search-box" name="query" />
+      </div>
+      <div class="container-search-inner-form-submit">
+        <input class="container-search-inner-form-submit-button" type="submit" value="Go" />
+      </div>
+    </form>
+  </div>
+
+<ul class="post-list" id="search-results"></ul>
+<div class="pagination"></div>
+
+<script>
+    window.store = {
+      
+        "posts-german-sample": {
+          "title": "sample",
+          "author": "",
+          "category": "german",
+          "date": "13 January 2017",
+          "content": "You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.To add new posts, simply add a file in the _posts directory that follows the convention YYYY-MM-DD-name-of-post.ext and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.Jekyll also offers powerful support for code snippets:def print_hi(name)  puts \"Hi, #{name}\"endprint_hi('Tom')#=&gt; prints 'Hi, Tom' to STDOUT.&lt;?php $variables = explode(array(holy), ','); print_r($variables);?&gt;",
+          "url": "/posts/german/sample"
+        }
+        
+      
+    };
+  </script>
+
+<script src="../assets/js/lunr.min.js"></script>
+
+<script src="../assets/js/search.js"></script>
+
 
       </section>
     </div>
   </body>
+
   <footer class="site-footer">
 
   <div class="wrapper">
